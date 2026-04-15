@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "9b9cd495-1812-49df-9315-4b92fc5bf9b8",
     "Name": "UsrDemoProcess",
-    "ModifiedOnUtc": "\/Date(1776190739000)\/",
+    "ModifiedOnUtc": "\/Date(1776235001000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Demo process",
     "DependsOn": []
