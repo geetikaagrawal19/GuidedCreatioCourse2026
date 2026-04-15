@@ -1,6 +1,6 @@
 *
-!UsrYacht/
-!UsrYacht/**
+!UsrYachts/
+!UsrYachts/**
 !.gitignore
 
 .vs
