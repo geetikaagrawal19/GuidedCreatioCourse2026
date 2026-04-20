@@ -116,6 +116,40 @@
     "FB5": 2
   }
 }
++ MetaData.Schema.D2 {
+  "UId": "ee7e75dd-6c34-ac47-c068-c437dd5f6bea",
+  "A2": "UsrCity",
+  "A3": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A4": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "5ca90b6a-93e7-4448-befe-ab5166ec2cfe",
+  "E6": true,
+  "E20": true,
+  "E17": "UsrCityId",
+  "E18": "UsrCityName"
+}
++ MetaData.Schema.D2 {
+  "UId": "ba75a23a-9076-fd22-30fa-da3aeab046b4",
+  "A2": "UsrCountry",
+  "A3": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A4": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "09fce1f8-515c-4296-95cd-8cd93f79a6cf",
+  "E6": true,
+  "E20": true,
+  "E17": "UsrCountryId",
+  "E18": "UsrCountryName"
+}
++ MetaData.Schema.D2 {
+  "UId": "f1af0286-3c9d-69df-db51-be95ffa0eb9d",
+  "A2": "UsrColumn17",
+  "A3": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A4": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
+  "S2": "07ba84ce-0bf7-44b4-9f2c-7b15032eb98c"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -130,7 +164,10 @@
   "f09d5af0-e695-20ad-6d7b-baa2a4ab00f4",
   "008e90d6-4dea-f0db-6642-d490f032f556",
   "de21c54e-4a06-1c7e-abf9-305c84db9c02",
-  "6236661f-dd88-fea7-0964-a180acf21c31"
+  "6236661f-dd88-fea7-0964-a180acf21c31",
+  "ee7e75dd-6c34-ac47-c068-c437dd5f6bea",
+  "ba75a23a-9076-fd22-30fa-da3aeab046b4",
+  "f1af0286-3c9d-69df-db51-be95ffa0eb9d"
 ]
 = MetaData.Schema.D20.A2 "UsrYachtsEvents"
 + MetaData.Schema.D20.FA1 false
