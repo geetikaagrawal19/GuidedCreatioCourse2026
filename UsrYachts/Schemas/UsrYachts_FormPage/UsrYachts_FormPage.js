@@ -81,12 +81,35 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "Number",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrNumber_gw6943l",
+					"control": "$PDS_UsrNumber_gw6943l",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": true,
+					"multiline": false,
+					"labelPosition": "auto",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "Price",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 2,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -99,7 +122,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -108,7 +131,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -122,7 +145,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -184,6 +207,28 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "PassengersCount",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrPassengersCount_axzl264",
+					"control": "$PDS_UsrPassengersCount_axzl264",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "Manager",
 				"values": {
 					"layoutConfig": {
@@ -206,28 +251,6 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"readonly": false,
 					"placeholder": "",
 					"valueDetails": null
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "PassengersCount",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_UsrPassengersCount_axzl264",
-					"control": "$PDS_UsrPassengersCount_axzl264",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -258,22 +281,23 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "Number",
+				"name": "Input_oh8zp4n",
 				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_UsrNumber_gw6943l",
-					"control": "$PDS_UsrNumber_gw6943l",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": true,
-					"multiline": false,
-					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
 						"row": 3,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.EmailInput",
+					"label": "#ResourceString(Input_oh8zp4n_label)#",
+					"control": "$PDS_UsrManagerEmail_umfbdmj",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": true,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": true
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -464,6 +488,11 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"modelConfig": {
 							"path": "PDS.UsrColumn17"
 						}
+					},
+					"PDS_UsrManagerEmail_umfbdmj": {
+						"modelConfig": {
+							"path": "PDS.UsrManagerEmail_umfbdmj"
+						}
 					}
 				}
 			},
@@ -496,7 +525,13 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "UsrYachts"
+							"entitySchemaName": "UsrYachts",
+							"attributes": {
+								"UsrManagerEmail_umfbdmj": {
+									"path": "UsrManager.Email",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
 					}

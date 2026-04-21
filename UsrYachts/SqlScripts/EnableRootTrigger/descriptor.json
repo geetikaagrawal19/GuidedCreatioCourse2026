@@ -3,8 +3,8 @@
     "UId": "f75933b0-d015-d940-5af4-bb34f2aea972",
     "Name": "EnableRootTrigger",
     "DBEngineType": 0,
-    "InstallType": 0,
-    "ModifiedOnUtc": "\/Date(1776675232000)\/",
+    "InstallType": 2,
+    "ModifiedOnUtc": "\/Date(1776750923000)\/",
     "BackwardCompatibilityConfirmed": false,
     "DependsOn": []
   }
