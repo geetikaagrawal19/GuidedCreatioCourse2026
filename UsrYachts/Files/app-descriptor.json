@@ -8,7 +8,14 @@
   "Version": "1.0.4",
   "RequiredPlatformVersion": "8.3.3",
   "MarketplaceLink": "",
-  "DependsOn": [],
+  "DependsOn": [
+    {
+      "Type": 0,
+      "Code": "CrtCustomer360App",
+      "Name": "Customer 360",
+      "Version": "1.14.22"
+    }
+  ],
   "Code": "UsrYachts",
   "Packages": [
     {
