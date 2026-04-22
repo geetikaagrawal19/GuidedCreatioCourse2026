@@ -646,6 +646,9 @@
 	<ItemGroup Label="Entity Files">
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrTrafficLight/UsrTrafficLight.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrTrafficLight/UsrTrafficLight.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtCategory/UsrYachtCategory.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtCategory/UsrYachtCategory.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtCategoryStorage/UsrYachtCategoryStorage.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtCategoryStorage/UsrYachtCategoryStorage.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtRental/UsrYachtRental.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtRental/UsrYachtRental.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachts/UsrYachts.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachts/UsrYachts.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtsDriveType/UsrYachtsDriveType.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtsDriveType/UsrYachtsDriveType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtsStatus/UsrYachtsStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachts/Schemas/UsrYachtsStatus/UsrYachtsStatus.cs')" />
