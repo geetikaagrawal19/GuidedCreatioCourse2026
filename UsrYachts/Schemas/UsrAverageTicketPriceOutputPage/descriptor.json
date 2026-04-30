@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "bd1f19fb-0d5f-49e1-a054-4c96404a4011",
+    "Name": "UsrAverageTicketPriceOutputPage",
+    "ModifiedOnUtc": "\/Date(1776849420000)\/",
+    "Parent": {
+      "UId": "7ed23be6-71df-4ad3-b56a-caa77b9881ce",
+      "Name": "PageWithTabsAndProgressBarTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Average ticket price output page"
+  }
+}

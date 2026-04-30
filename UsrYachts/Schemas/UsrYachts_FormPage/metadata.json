@@ -120,6 +120,34 @@
   "A4": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
   "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34"
 }
++ MetaData.Schema.B2 {
+  "UId": "237d8f8f-4b99-3c34-801d-00aba573999a",
+  "A2": "CalculateAverageTicketPriceMenuItem_clicked_params_notificationText",
+  "A3": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
+  "A4": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34"
+}
++ MetaData.Schema.B2 {
+  "UId": "50e10d87-a142-a7ca-3644-db234a6b6b13",
+  "A2": "CalculateAverageTicketPriceMenuItem_caption",
+  "A3": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
+  "A4": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34"
+}
++ MetaData.Schema.B2 {
+  "UId": "02233836-c5a4-d7c6-3744-50e140b0aa0a",
+  "A2": "ActionsButton_caption",
+  "A3": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
+  "A4": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34"
+}
++ MetaData.Schema.B2 {
+  "UId": "8df4d6ed-4ff0-6dc6-8ce5-5c1074a6bd75",
+  "A2": "CallMaxPriceWebServiceMenuItem_caption",
+  "A3": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
+  "A4": "f7b4cb68-6f3e-4eea-85d1-00d2351309d2",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34"
+}
 = MetaData.Schema.B2.["fd9e5bd2-19ad-68b5-1356-fe7b39d36f28"].A4 "f7b4cb68-6f3e-4eea-85d1-00d2351309d2"
 = MetaData.Schema.B2.["a77180d7-a9d0-5c7d-a47b-74c0545a1774"].A4 "f7b4cb68-6f3e-4eea-85d1-00d2351309d2"
 = MetaData.Schema.B2.["a53e6c9a-741a-21de-9293-9d87d6014595"].A4 "f7b4cb68-6f3e-4eea-85d1-00d2351309d2"
@@ -151,6 +179,10 @@
   "48c583f6-9915-0a64-d4a6-c7bd097d33ba",
   "bb9b8656-83dd-1478-1998-2ac97b0de49f",
   "7f681ef1-8c36-5f9d-3467-3a2a8f8af4b2",
+  "237d8f8f-4b99-3c34-801d-00aba573999a",
+  "50e10d87-a142-a7ca-3644-db234a6b6b13",
+  "02233836-c5a4-d7c6-3744-50e140b0aa0a",
+  "8df4d6ed-4ff0-6dc6-8ce5-5c1074a6bd75",
   "fd9e5bd2-19ad-68b5-1356-fe7b39d36f28",
   "a77180d7-a9d0-5c7d-a47b-74c0545a1774",
   "a53e6c9a-741a-21de-9293-9d87d6014595",
