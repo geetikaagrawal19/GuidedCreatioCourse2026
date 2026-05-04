@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "4524c560-5986-47c9-b494-f99c049ae4c5",
+    "Name": "UsrYachtRentalTotalPriceCalc",
+    "ModifiedOnUtc": "\/Date(1777647084000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "YachtRental total price calc",
+    "DependsOn": []
+  }
+}

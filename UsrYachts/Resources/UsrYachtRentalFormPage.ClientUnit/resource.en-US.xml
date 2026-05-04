@@ -5,6 +5,7 @@
 			<Item Name="Caption" Value="Yacht rental form page" />
 			<Item Name="LocalizableStrings.PageTitle_caption.Value" Value="Yacht Rental Data" />
 			<Item Name="LocalizableStrings.addRecord_5tjwhxr_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_fgsu92h_caption.Value" Value="Add new" />
 		</Items>
 	</Group>
 </Resources>

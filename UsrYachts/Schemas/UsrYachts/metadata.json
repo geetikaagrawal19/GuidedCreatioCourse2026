@@ -100,7 +100,8 @@
   "A3": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
   "A4": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
   "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
-  "S2": "07ba84ce-0bf7-44b4-9f2c-7b15032eb98c"
+  "S2": "07ba84ce-0bf7-44b4-9f2c-7b15032eb98c",
+  "E2": 1
 }
 + MetaData.Schema.D2 {
   "UId": "6236661f-dd88-fea7-0964-a180acf21c31",
@@ -150,6 +151,43 @@
   "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
   "S2": "07ba84ce-0bf7-44b4-9f2c-7b15032eb98c"
 }
++ MetaData.Schema.D2 {
+  "UId": "eb372cf8-17ba-f3e8-7772-0bff99f67675",
+  "A2": "UsrCaptain",
+  "A3": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A4": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "16be3651-8fe2-4159-8dd0-a803d4683dd3",
+  "E6": true,
+  "E17": "UsrCaptainId",
+  "E18": "UsrCaptainName"
+}
++ MetaData.Schema.D2 {
+  "UId": "a7ef461c-d55c-e9ff-1b1a-d40ef67ab3c8",
+  "A2": "UsrCrewCount",
+  "A3": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A4": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+}
++ MetaData.Schema.D2 {
+  "UId": "b54cc954-1854-9a78-2757-e79dc177edf2",
+  "A2": "UsrLength",
+  "A3": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A4": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
+  "S2": "07ba84ce-0bf7-44b4-9f2c-7b15032eb98c"
+}
++ MetaData.Schema.D2 {
+  "UId": "cffb43ee-e0ef-76fb-16ed-ee5de67a834c",
+  "A2": "UsrColumn18",
+  "A3": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A4": "8a6221fb-d16d-4b6d-a39d-bb6ed77fde7b",
+  "A5": "20056216-c5cc-4ea0-b351-4ac2af279c34",
+  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd",
+  "E25": true
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -167,7 +205,11 @@
   "6236661f-dd88-fea7-0964-a180acf21c31",
   "ee7e75dd-6c34-ac47-c068-c437dd5f6bea",
   "ba75a23a-9076-fd22-30fa-da3aeab046b4",
-  "f1af0286-3c9d-69df-db51-be95ffa0eb9d"
+  "f1af0286-3c9d-69df-db51-be95ffa0eb9d",
+  "eb372cf8-17ba-f3e8-7772-0bff99f67675",
+  "a7ef461c-d55c-e9ff-1b1a-d40ef67ab3c8",
+  "b54cc954-1854-9a78-2757-e79dc177edf2",
+  "cffb43ee-e0ef-76fb-16ed-ee5de67a834c"
 ]
 = MetaData.Schema.D20.A2 "UsrYachtsEvents"
 + MetaData.Schema.D20.FA1 false

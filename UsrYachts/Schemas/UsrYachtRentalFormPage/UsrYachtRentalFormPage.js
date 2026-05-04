@@ -87,6 +87,46 @@ define("UsrYachtRentalFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
+				"name": "Manager",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.UsrYachtRentalDS_UsrManager_s1v8zkx",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "above",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$UsrYachtRentalDS_UsrManager_s1v8zkx",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "Main",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_fgsu92h",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_fgsu92h_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "Manager",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "Input_mic9mmd",
 				"values": {
 					"type": "crt.Input",
@@ -100,7 +140,7 @@ define("UsrYachtRentalFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "Main",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -142,6 +182,24 @@ define("UsrYachtRentalFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"modelConfig": {
 							"path": "UsrYachtRentalDS.UsrRentalComment"
 						}
+					},
+					"UsrYachtRentalDS_UsrManager_s1v8zkx": {
+						"modelConfig": {
+							"path": "UsrYachtRentalDS.UsrManager"
+						}
+					},
+					"UsrYachtRentalDS_UsrManager_s1v8zkx_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
 					}
 				}
 			}
@@ -170,9 +228,43 @@ define("UsrYachtRentalFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								},
 								"allowCopyingRecords": false
 							}
+						},
+						"UsrYachtsDS": {
+							"type": "crt.EntityDataSource",
+							"scope": "page",
+							"config": {
+								"entitySchemaName": "UsrYachts",
+								"loadParameters": {
+									"options": {
+										"pagingConfig": {
+											"rowCount": 1,
+											"rowsOffset": -1
+										},
+										"sortingConfig": {
+											"columns": []
+										}
+									},
+									"parameters": [
+										{
+											"type": "filter",
+											"value": null
+										}
+									]
+								},
+								"allowCopyingRecords": false
+							}
 						}
 					},
-					"primaryDataSourceName": "UsrYachtRentalDS"
+					"primaryDataSourceName": "UsrYachtRentalDS",
+					"loadingConfig": {},
+					"dependencies": {
+						"UsrYachtsDS": [
+							{
+								"attributePath": "Id",
+								"relationPath": "UsrYachtRentalDS.UsrParentYacht"
+							}
+						]
+					}
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,

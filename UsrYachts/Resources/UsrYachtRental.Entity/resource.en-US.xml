@@ -4,10 +4,12 @@
 		<Items>
 			<Item Name="Caption" Value="Yacht rental" />
 			<Item Name="Columns.UsrCustomer.Caption" Value="Customer" />
-			<Item Name="Columns.UsrEndDate.Caption" Value="End date" />
+			<Item Name="Columns.UsrEndDate.Caption" Value="Rental End" />
+			<Item Name="Columns.UsrManager.Caption" Value="Manager" />
 			<Item Name="Columns.UsrParentYacht.Caption" Value="Parent yacht" />
 			<Item Name="Columns.UsrRentalComment.Caption" Value="Comment" />
-			<Item Name="Columns.UsrStartDate.Caption" Value="Start date" />
+			<Item Name="Columns.UsrStartDate.Caption" Value="Rental start" />
+			<Item Name="Columns.UsrTotalPriceEur.Caption" Value="Total Price (EUR)" />
 		</Items>
 	</Group>
 </Resources>

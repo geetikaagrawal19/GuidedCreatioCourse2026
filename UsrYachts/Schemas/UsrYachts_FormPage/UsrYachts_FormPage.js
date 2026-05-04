@@ -74,7 +74,8 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 							"notificationText": "#ResourceString(CalculateAverageTicketPriceMenuItem_clicked_params_notificationText)#",
 							"recordIdProcessParameterName": "YachtIdParameter"
 						}
-					}
+					},
+					"icon": "calculator-icon"
 				},
 				"parentName": "ActionsButton",
 				"propertyName": "menuItems",
@@ -207,7 +208,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
-				"name": "DriveType",
+				"name": "Length",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -215,20 +216,13 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 						"row": 1,
 						"rowSpan": 1
 					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrDriveType_oibew2v",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": false,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_UsrDriveType_oibew2v",
-					"visible": true,
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrLength_f06okj2",
+					"control": "$PDS_UsrLength_f06okj2",
 					"readonly": false,
 					"placeholder": "",
-					"valueDetails": null
+					"labelPosition": "auto",
+					"tooltip": ""
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -265,7 +259,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
-				"name": "PassengersCount",
+				"name": "DriveType",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -273,19 +267,26 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 						"row": 2,
 						"rowSpan": 1
 					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_UsrPassengersCount_axzl264",
-					"control": "$PDS_UsrPassengersCount_axzl264",
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrDriveType_oibew2v",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrDriveType_oibew2v",
+					"visible": true,
 					"readonly": false,
 					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
+					"valueDetails": null
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 2
 			},
-{
+			{
 				"operation": "insert",
 				"name": "Manager",
 				"values": {
@@ -333,22 +334,21 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
-				"name": "Comment",
+				"name": "PassengersCount",
 				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_UsrComment_y3rpdqg",
-					"control": "$PDS_UsrComment_y3rpdqg",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 3,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrPassengersCount_axzl264",
+					"control": "$PDS_UsrPassengersCount_axzl264",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -380,7 +380,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
-				"name": "Country",
+				"name": "CrewCount",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -388,20 +388,13 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 						"row": 4,
 						"rowSpan": 1
 					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrCountry_c1ta37k",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": false,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_UsrCountry_c1ta37k",
-					"visible": true,
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrCrewCount_1xtwh4z",
+					"control": "$PDS_UsrCrewCount_1xtwh4z",
 					"readonly": false,
 					"placeholder": "",
-					"valueDetails": null
+					"labelPosition": "auto",
+					"tooltip": ""
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -409,7 +402,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
-				"name": "City",
+				"name": "Captain",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -418,7 +411,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrCity_8he6sp4",
+					"label": "$Resources.Strings.PDS_UsrCaptain_k3igmt7",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": false,
@@ -426,7 +419,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_UsrCity_8he6sp4",
+					"control": "$PDS_UsrCaptain_k3igmt7",
 					"visible": true,
 					"readonly": false,
 					"placeholder": "",
@@ -435,6 +428,23 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_o361ozl",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_o361ozl_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "Captain",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -461,6 +471,87 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "Country",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrCountry_c1ta37k",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrCountry_c1ta37k",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "Comment",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrComment_y3rpdqg",
+					"control": "$PDS_UsrComment_y3rpdqg",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 6,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 10
+			},
+			{
+				"operation": "insert",
+				"name": "City",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 6,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrCity_8he6sp4",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_UsrCity_8he6sp4",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 11
 			},
 			{
 				"operation": "insert",
@@ -673,6 +764,33 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
+				"name": "Button_i59wqkl",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_i59wqkl_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrAutoAddYachtRentalsProcess_594e4b9",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "ParentYachtIdParameter"
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_1tusip4",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "GridContainer_6wvgf6c",
 				"values": {
 					"type": "crt.GridContainer",
@@ -738,13 +856,27 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 							"id": "94e08b0e-ce5d-e1d7-c35d-bb12f062f31b",
 							"code": "GridDetail_t4ndb12DS_UsrRentalComment",
 							"caption": "#ResourceString(GridDetail_t4ndb12DS_UsrRentalComment)#",
-							"dataValueType": 28
+							"dataValueType": 28,
+							"width": 206
 						},
 						{
 							"id": "a8f89df5-37ef-b18a-c653-baa7c82c1487",
 							"code": "GridDetail_t4ndb12DS_CreatedOn",
 							"caption": "#ResourceString(GridDetail_t4ndb12DS_CreatedOn)#",
 							"dataValueType": 7
+						},
+						{
+							"id": "cbe824aa-8745-d550-f5a7-f1cf6c5f9e13",
+							"code": "GridDetail_t4ndb12DS_UsrParentYacht_UsrManager",
+							"caption": "#ResourceString(GridDetail_t4ndb12DS_UsrParentYacht_UsrManager)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "17385237-1220-0227-a97e-bd6b7d3f671c",
+							"code": "GridDetail_t4ndb12DS_UsrTotalPriceEur",
+							"caption": "#ResourceString(GridDetail_t4ndb12DS_UsrTotalPriceEur)#",
+							"dataValueType": 6,
+							"width": 162
 						}
 					],
 					"placeholder": false
@@ -774,7 +906,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 							"MySuperValidator": {
 								"type": "usr.DGValidator",
 								"params": {
-									"minValue": 200,
+									"minValue": 500,
 									"message": "#ResourceString(PriceCannotBeLess)#"
 								}
 							}
@@ -918,7 +1050,7 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 								"default": [
 									{
 										"direction": "asc",
-										"columnName": "UsrRentalComment"
+										"columnName": "CreatedOn"
 									}
 								]
 							}
@@ -950,6 +1082,16 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 										"path": "GridDetail_t4ndb12DS.CreatedOn"
 									}
 								},
+								"GridDetail_t4ndb12DS_UsrParentYacht_UsrManager": {
+									"modelConfig": {
+										"path": "GridDetail_t4ndb12DS.UsrParentYacht_UsrManager"
+									}
+								},
+								"GridDetail_t4ndb12DS_UsrTotalPriceEur": {
+									"modelConfig": {
+										"path": "GridDetail_t4ndb12DS.UsrTotalPriceEur"
+									}
+								},
 								"GridDetail_t4ndb12DS_Id": {
 									"modelConfig": {
 										"path": "GridDetail_t4ndb12DS.Id"
@@ -960,6 +1102,34 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 					},
 					"CategoriesMultiSelect_List_Items_Predefined_Filter": {
 						"value": null
+					},
+					"PDS_UsrCrewCount_1xtwh4z": {
+						"modelConfig": {
+							"path": "PDS.UsrCrewCount"
+						}
+					},
+					"PDS_UsrLength_f06okj2": {
+						"modelConfig": {
+							"path": "PDS.UsrLength"
+						}
+					},
+					"PDS_UsrCaptain_k3igmt7": {
+						"modelConfig": {
+							"path": "PDS.UsrCaptain"
+						}
+					},
+					"PDS_UsrCaptain_k3igmt7_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
 					}
 				}
 			},
@@ -1030,6 +1200,13 @@ define("UsrYachts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 								},
 								"CreatedOn": {
 									"path": "CreatedOn"
+								},
+								"UsrParentYacht_UsrManager": {
+									"type": "ForwardReference",
+									"path": "UsrParentYacht.UsrManager"
+								},
+								"UsrTotalPriceEur": {
+									"path": "UsrTotalPriceEur"
 								}
 							}
 						}
